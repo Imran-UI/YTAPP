@@ -61,7 +61,7 @@ export class YTIframeComponent implements OnInit, OnChanges {
     this.player = new window["YT"].Player("player", {
       videoId: this.video,
       height: 200,
-      width: 200,
+      width: 600,
       playerVars: {
         autoplay: 1,
         modestbranding: 1,
