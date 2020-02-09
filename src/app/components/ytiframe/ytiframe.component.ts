@@ -103,6 +103,7 @@ export class YTIframeComponent implements OnInit, OnChanges {
       case window["YT"].PlayerState.PAUSED:
         if (this.player.getDuration() - this.player.getCurrentTime() != 0) {
           console.log("paused" + " @ " + this.cleanTime());
+          event.target.playVideo();
         }
         break;
       case window["YT"].PlayerState.ENDED:
